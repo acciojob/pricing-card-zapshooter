@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Pricing Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .pricing-card {
+      width: 340px;
+      padding: 24px 24px 32px 24px;
+      background: #fff;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+      margin: 60px auto;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .pricing-card img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 18px;
+    }
+    .pricing-card h1 {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 8px 0 10px 0;
+      font-family: 'Georgia', serif;
+    }
+    .pricing-card .price {
+      font-size: 1.15em;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .pricing-card .desc {
+      color: #222;
+      font-size: 1.01em;
+      margin-bottom: 23px;
+      line-height: 1.4;
+    }
+    .pricing-card button {
+      padding: 10px 36px;
+      background: #ff7979;
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.15em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .pricing-card button:hover {
+      background: #e15a5a;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="pricing-card">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=600&h=300" alt="Pricing Card Image">
+    <h1>Pricing Card</h1>
+    <p class="price">Price: Rs.200</p>
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet velit ut justo cursus cursus.</p>
+    <button>Buy Now</button>
+  </div>
 </body>
-
 </html>
